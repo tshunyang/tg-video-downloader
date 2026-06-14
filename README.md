@@ -1,4 +1,4 @@
-# TG Resource Downloader
+# Telegram 媒体资源下载器
 
 一个基于 Python、FastAPI 和 Telethon 的 Telegram 资源自动下载器，提供网页管理界面，可监听指定群组 / 频道，并按文件类型、体积、目录和命名规则自动下载资源。
 
@@ -92,6 +92,6 @@ vi /etc/tg-video-downloader.env
 
 `.gitignore` 已默认排除这些文件。
 
-## License
+## 开源协议
 
 MIT
