@@ -1,6 +1,6 @@
-# Open source release checklist
+# 开源发布检查清单
 
-Before publishing this project, make sure these private runtime files are not committed:
+发布 Telegram 媒体资源下载器前，请确认以下私密运行文件没有被提交：
 
 - `.env`
 - `*.session` and `*.session-journal`
@@ -10,7 +10,7 @@ Before publishing this project, make sure these private runtime files are not co
 - `server.log`
 - `app/*.bak-*`
 
-Recommended first release flow:
+推荐首次发布流程：
 
 ```bash
 git init
@@ -19,13 +19,13 @@ git status
 git commit -m "Initial open source release"
 ```
 
-Build an OpenWrt IPK package:
+构建 OpenWrt IPK 安装包：
 
 ```bash
 python3 packaging/openwrt/build-ipk.py --arch all
 ```
 
-Install on OpenWrt:
+在 OpenWrt 上安装：
 
 ```bash
 opkg install dist/tg-video-downloader_0.1.0_all.ipk
